@@ -7,51 +7,41 @@
 			font-family: Arial, sans-serif;
 			text-align: center;
 		}
-		.image-row {
-			list-style: none;
-			margin: 0;
-			padding: 0;
+		.image-grid {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.image-row li {
-			margin: 10px;
+		.image-grid img {
 			width: 200px;
-			height: 150px;
-			background-size: cover;
-			background-position: center;
-			border-radius: 10px;
-			overflow: hidden;
+			margin: 10px;
 		}
-		.map {
+		.location-list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.location-list li {
+			margin-bottom: 20px;
+		}
+		.location-map {
 			width: 400px;
 			height: 200px;
 			margin: 20px auto;
-			border: 1px solid #ccc;
 		}
 	</style>
 </head>
 <body>
 	<h1>New York in One Day Guided Sightseeing Tour</h1>
-	<ul class="image-row">
-		<li style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/42/caption.jpg');"></li>
-		<li style="background-image: url('IMAGE URL 2');"></li>
-		<li style="background-image: url('IMAGE URL 3');"></li>
-	</ul>
-	<ul>
-		<li>Statue of Liberty - New York City, New York</li>
-		<div class="map">
-			<iframe src="https://www.google.com/maps?q=Statue of Liberty - New York City, New York&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
-		<li>Central Park - New York City, New York</li>
-		<div class="map">
-			<iframe src="https://www.google.com/maps?q=Central Park - New York City, New York&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
-		<li>Times Square - New York City, New York</li>
-		<div class="map">
-			<iframe src="https://www.google.com/maps?q=Times Square - New York City, New York&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
+	<div class="image-grid">
+		<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/42/caption.jpg" alt="Image 1">
+		<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/43/caption.jpg" alt="Image 2">
+		<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/44/caption.jpg" alt="Image 3">
+	</div>
+	<ul class="location-list">
+		<li>Statue of Liberty, Liberty Island, New York City, NY <iframe src="https://www.google.com/maps?q=Statue+of+Liberty,+Liberty+Island,+New+York+City,+NY&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+		<li>Central Park, Manhattan, New York City, NY <iframe src="https://www.google.com/maps?q=Central+Park,+Manhattan,+New+York+City,+NY&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+		<li>Times Square, Manhattan, New York City, NY <iframe src="https://www.google.com/maps?q=Times+Square,+Manhattan,+New+York+City,+NY&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe></li>
 	</ul>
 </body>
 </html>
