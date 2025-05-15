@@ -7,55 +7,60 @@
 			font-family: Arial, sans-serif;
 			text-align: center;
 		}
-		
 		.image-row {
 			list-style: none;
-			padding: 0;
 			margin: 0;
+			padding: 0;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		
-		.image {
+		.image-row li {
+			margin: 10px;
 			width: 200px;
-			margin: 20px;
-			border: 1px solid #ccc;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			height: 150px;
+			background-size: cover;
+			background-position: center;
 		}
-		
-		.location {
+		.image-row li img {
+			width: 100%;
+			height: 100%;
+		}
+		.location-list {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.location-list li {
 			margin-bottom: 20px;
 		}
-		
-		.location iframe {
+		.location-map {
 			width: 100%;
 			height: 300px;
-			border: 0;
+			margin-top: 10px;
 		}
 	</style>
 </head>
 <body>
 	<h1>Tel Aviv Jaffa Guided Bike Tour</h1>
 	<ul class="image-row">
-		<li class="image"><img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/8e/8b/ce/caption.jpg" alt="Image 1"></li>
-		<li class="image"><img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/8e/8b/ce/caption.jpg" alt="Image 2"></li>
-		<li class="image"><img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/8e/8b/ce/caption.jpg" alt="Image 3"></li>
+		<li style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/1a/8e/8b/ce/caption.jpg');"></li>
+		<li style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/1a/8e/8b/ce/caption.jpg');"></li>
+		<li style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/1a/8e/8b/ce/caption.jpg');"></li>
 	</ul>
-	<ul>
-		<li class="location">
-			Attraction 1
-			<iframe src="https://www.google.com/maps?q=Tel Aviv, Tel Aviv District&output=embed" frameborder="0" style="border:0;" allowfullscreen></iframe>
-		</li>
-		<li class="location">
-			Attraction 2
-			<iframe src="https://www.google.com/maps?q=Tel Aviv, Tel Aviv District&output=embed" frameborder="0" style="border:0;" allowfullscreen></iframe>
-		</li>
-		<li class="location">
-			Attraction 3
-			<iframe src="https://www.google.com/maps?q=Tel Aviv, Tel Aviv District&output=embed" frameborder="0" style="border:0;" allowfullscreen></iframe>
-		</li>
+	<ul class="location-list">
+		<li>Jaffa Flea Market - Tel Aviv</li>
+		<div class="location-map">
+			<iframe src="https://www.google.com/maps?q=Jaffa Flea Market - Tel Aviv&output=embed" frameborder="0" style="width:100%; height:100%;"></iframe>
+		</div>
+		<li>White City - Tel Aviv</li>
+		<div class="location-map">
+			<iframe src="https://www.google.com/maps?q=White City - Tel Aviv&output=embed" frameborder="0" style="width:100%; height:100%;"></iframe>
+		</div>
+		<li>Independence Hall - Tel Aviv</li>
+		<div class="location-map">
+			<iframe src="https://www.google.com/maps?q=Independence Hall - Tel Aviv&output=embed" frameborder="0" style="width:100%; height:100%;"></iframe>
+		</div>
 	</ul>
 </body>
 </html>
