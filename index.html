@@ -7,18 +7,30 @@
 			font-family: Arial, sans-serif;
 			text-align: center;
 		}
+		.container {
+			max-width: 800px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #f9f9f9;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
 		.image-grid {
-			margin: 20px auto;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 10px;
 		}
 		.image-grid img {
 			width: 200px;
-			margin: 10px;
+			height: 150px;
+			object-fit: cover;
+			border-radius: 10px;
 		}
 		.locations {
-			margin-top: 40px;
+			list-style: none;
+			padding: 0;
+			margin: 0;
 		}
 		.locations li {
 			margin-bottom: 20px;
@@ -26,27 +38,27 @@
 		.locations iframe {
 			width: 100%;
 			height: 300px;
-			border: none;
+			border: 0;
 		}
 	</style>
 </head>
 <body>
-	<h1>Paris Walking Food Tour with Secret Food Tours</h1>
-	<div class="image-grid">
-		<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/48/caption.jpg" alt="Image 1">
-		<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/49/caption.jpg" alt="Image 2">
-		<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/4a/caption.jpg" alt="Image 3">
-	</div>
-	<div class="locations">
-		<ul>
+	<div class="container">
+		<h1>Paris Walking Food Tour with Secret Food Tours</h1>
+		<div class="image-grid">
+			<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/48/caption.jpg" alt="Image 1">
+			<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/49/caption.jpg" alt="Image 2">
+			<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/50/caption.jpg" alt="Image 3">
+		</div>
+		<ul class="locations">
 			<li>Attraction 1 - Paris, Ile-de-France
-				<iframe src="https://www.google.com/maps?q=Paris,+Ile-de-France&output=embed" frameborder="0" width="400" height="300"></iframe>
+				<iframe src="https://www.google.com/maps?q=Attraction%201%20-%20Paris,%20Ile-de-France&output=embed" frameborder="0" allowfullscreen></iframe>
 			</li>
 			<li>Attraction 2 - Paris, Ile-de-France
-				<iframe src="https://www.google.com/maps?q=Paris,+Ile-de-France&output=embed" frameborder="0" width="400" height="300"></iframe>
+				<iframe src="https://www.google.com/maps?q=Attraction%202%20-%20Paris,%20Ile-de-France&output=embed" frameborder="0" allowfullscreen></iframe>
 			</li>
 			<li>Attraction 3 - Paris, Ile-de-France
-				<iframe src="https://www.google.com/maps?q=Paris,+Ile-de-France&output=embed" frameborder="0" width="400" height="300"></iframe>
+				<iframe src="https://www.google.com/maps?q=Attraction%203%20-%20Paris,%20Ile-de-France&output=embed" frameborder="0" allowfullscreen></iframe>
 			</li>
 		</ul>
 	</div>
