@@ -1,62 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>New York in One Day Guided Sightseeing Tour</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			text-align: center;
-		}
-		.images {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-			justify-content: center;
-		}
-		.images li {
-			margin-right: 10px;
-		}
-		.images img {
-			width: 200px;
-			height: auto;
-			margin-bottom: 20px;
-		}
-		.locations {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-		}
-		.locations li {
-			margin-bottom: 20px;
-		}
-		.locations iframe {
-			width: 100%;
-			height: 300px;
-			border: 1px solid #ccc;
-		}
-	</style>
+  <title>New York in One Day Guided Sightseeing Tour</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .image-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .image {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+    }
+    .location {
+      margin-bottom: 20px;
+    }
+    .location iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
-	<h1>New York in One Day Guided Sightseeing Tour</h1>
-	<ul class="images">
-		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/42/caption.jpg" alt=""></li>
-		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/43/caption.jpg" alt=""></li>
-		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/44/caption.jpg" alt=""></li>
-	</ul>
-	<ul class="locations">
-		<li>
-			<p>Times Square, New York City, New York</p>
-			<iframe src="https://www.google.com/maps?q=Times Square, New York City, New York&output=embed" frameborder="0" width="100%" height="300"></iframe>
-		</li>
-		<li>
-			<p>Central Park, New York City, New York</p>
-			<iframe src="https://www.google.com/maps?q=Central Park, New York City, New York&output=embed" frameborder="0" width="100%" height="300"></iframe>
-		</li>
-		<li>
-			<p>Statue of Liberty, New York City, New York</p>
-			<iframe src="https://www.google.com/maps?q=Statue of Liberty, New York City, New York&output=embed" frameborder="0" width="100%" height="300"></iframe>
-		</li>
-	</ul>
+  <h1>New York in One Day Guided Sightseeing Tour</h1>
+  <div class="image-container">
+    <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/42/caption.jpg" alt="Image 1">
+    <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/43/caption.jpg" alt="Image 2">
+    <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/44/caption.jpg" alt="Image 3">
+  </div>
+  <ul>
+    <li>Central Park, New York City, New York</li>
+    <iframe src="https://www.google.com/maps?q=Central+Park,+New+York+City,+New+York&output=embed" frameborder="0" width="100%" height="300"></iframe>
+    <li>Times Square, New York City, New York</li>
+    <iframe src="https://www.google.com/maps?q=Times+Square,+New+York+City,+New+York&output=embed" frameborder="0" width="100%" height="300"></iframe>
+    <li>Statue of Liberty, New York City, New York</li>
+    <iframe src="https://www.google.com/maps?q=Statue+of+Liberty,+New+York+City,+New+York&output=embed" frameborder="0" width="100%" height="300"></iframe>
+  </ul>
 </body>
 </html>
