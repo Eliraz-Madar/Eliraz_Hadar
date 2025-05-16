@@ -7,41 +7,52 @@
 			font-family: Arial, sans-serif;
 			text-align: center;
 		}
-		.container {
-			max-width: 800px;
-			margin: 40px auto;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.image-container {
+		.image-row {
+			list-style: none;
+			margin: 0;
+			padding: 0;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.image {
-			width: 200px;
+		.image-row li {
 			margin: 10px;
+			width: 200px;
+		}
+		.image-row img {
+			width: 100%;
+			height: 150px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+		.map-container {
+			margin-top: 20px;
+			width: 400px;
+			height: 300px;
+			margin: 0 auto;
 		}
 	</style>
 </head>
 <body>
-	<div class="container">
-		<h1>New York in One Day Guided Sightseeing Tour</h1>
-		<div class="image-container">
-			<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/42/caption.jpg" alt="Image 1" class="image">
-			<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/43/caption.jpg" alt="Image 2" class="image">
-			<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/44/caption.jpg" alt="Image 3" class="image">
-		</div>
-		<ul>
-			<li>New York City, New York</li>
+	<h1>New York in One Day Guided Sightseeing Tour</h1>
+	<ul class="image-row">
+		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/42/caption.jpg" alt="Image 1"></li>
+		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/43/caption.jpg" alt="Image 2"></li>
+		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/44/caption.jpg" alt="Image 3"></li>
+	</ul>
+	<ul>
+		<li>New York City, New York</li>
+		<div class="map-container">
 			<iframe src="https://www.google.com/maps?q=New+York+City,+New+York&output=embed" frameborder="0" width="400" height="300"></iframe>
-			<li>Another Attraction, New York City, New York</li>
-			<iframe src="https://www.google.com/maps?q=Another+Attraction,+New+York+City,+New+York&output=embed" frameborder="0" width="400" height="300"></iframe>
-			<li>Last Attraction, New York City, New York</li>
-			<iframe src="https://www.google.com/maps?q=Last+Attraction,+New+York+City,+New+York&output=embed" frameborder="0" width="400" height="300"></iframe>
-		</ul>
-	</div>
+		</div>
+		<li>Another Attraction, Another Location</li>
+		<div class="map-container">
+			<iframe src="https://www.google.com/maps?q=Another+Location&output=embed" frameborder="0" width="400" height="300"></iframe>
+		</div>
+		<li>Last Attraction, Last Location</li>
+		<div class="map-container">
+			<iframe src="https://www.google.com/maps?q=Last+Location&output=embed" frameborder="0" width="400" height="300"></iframe>
+		</div>
+	</ul>
 </body>
 </html>
