@@ -1,57 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>New York in One Day Guided Sightseeing Tour</title>
+	<title>Paris Walking Food Tour with Secret Food Tours</title>
 	<style>
 		body {
 			font-family: Arial, sans-serif;
 			text-align: center;
 		}
-		
-		.container {
-			margin: 40px auto;
-			width: 800px;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		
-		.image {
-			margin: 20px;
+		img {
 			width: 200px;
-			height: 150px;
-			object-fit: cover;
+			margin: 10px;
 		}
-		
 		.locations {
-			margin-top: 40px;
+			list-style: none;
+			margin: 20px 0;
+			padding: 0;
 		}
-		
-		.location {
+		.locations li {
 			margin-bottom: 20px;
 		}
-		
-		.map {
-			width: 400px;
+		.locations iframe {
+			width: 100%;
 			height: 300px;
-			border: 1px solid #ccc;
+			margin: 10px 0;
 		}
 	</style>
 </head>
 <body>
-	<h1>New York in One Day Guided Sightseeing Tour</h1>
-	<div class="container">
-		<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/42/caption.jpg" alt="Image 1" class="image">
-		<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/43/caption.jpg" alt="Image 2" class="image">
-		<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/44/caption.jpg" alt="Image 3" class="image">
-	</div>
+	<h1>Paris Walking Food Tour with Secret Food Tours</h1>
+	<ul>
+		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/48/caption.jpg"></li>
+		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/49/caption.jpg"></li>
+		<li><img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/4a/caption.jpg"></li>
+	</ul>
 	<ul class="locations">
-		<li>Statue of Liberty, Liberty Island, New York City, NY</li>
-		<iframe src="https://www.google.com/maps?q=Statue+of+Liberty,+Liberty+Island,+New+York+City,+NY&output=embed" frameborder="0" style="width: 400px; height: 300px;"></iframe>
-		<li>Central Park, Manhattan, New York City, NY</li>
-		<iframe src="https://www.google.com/maps?q=Central+Park,+Manhattan,+New+York+City,+NY&output=embed" frameborder="0" style="width: 400px; height: 300px;"></iframe>
-		<li>9/11 Memorial & Museum, Lower Manhattan, New York City, NY</li>
-		<iframe src="https://www.google.com/maps?q=9/11+Memorial+%26+Museum,+Lower+Manhattan,+New+York+City,+NY&output=embed" frameborder="0" style="width: 400px; height: 300px;"></iframe>
+		<li>Attraction 1 - Paris, Ile-de-France
+			<iframe src="https://www.google.com/maps?q=Attraction 1 - Paris, Ile-de-France&output=embed" frameborder="0" width="400" height="300"></iframe>
+		</li>
+		<li>Attraction 2 - Paris, Ile-de-France
+			<iframe src="https://www.google.com/maps?q=Attraction 2 - Paris, Ile-de-France&output=embed" frameborder="0" width="400" height="300"></iframe>
+		</li>
+		<li>Attraction 3 - Paris, Ile-de-France
+			<iframe src="https://www.google.com/maps?q=Attraction 3 - Paris, Ile-de-France&output=embed" frameborder="0" width="400" height="300"></iframe>
+		</li>
 	</ul>
 </body>
 </html>
