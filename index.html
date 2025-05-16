@@ -7,42 +7,39 @@
       font-family: Arial, sans-serif;
       text-align: center;
     }
-    .image-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .image {
+    img {
       width: 200px;
-      height: 150px;
-      object-fit: cover;
-      border: 1px solid #ccc;
+      height: auto;
+      margin: 10px;
     }
     .location {
-      margin-bottom: 20px;
+      margin-top: 20px;
     }
     .location iframe {
       width: 100%;
-      height: 300px;
-      border: 0;
+      height: 400px;
     }
   </style>
 </head>
 <body>
   <h1>New York in One Day Guided Sightseeing Tour</h1>
-  <div class="image-container">
-    <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/42/caption.jpg" alt="Image 1">
-    <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/43/caption.jpg" alt="Image 2">
-    <img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/44/caption.jpg" alt="Image 3">
-  </div>
+  <img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/42/caption.jpg" alt="Image 1">
+  <img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/43/caption.jpg" alt="Image 2">
+  <img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/44/caption.jpg" alt="Image 3">
+
   <ul>
-    <li>Central Park, New York City, New York</li>
-    <iframe src="https://www.google.com/maps?q=Central+Park,+New+York+City,+New+York&output=embed" frameborder="0" width="100%" height="300"></iframe>
     <li>Times Square, New York City, New York</li>
-    <iframe src="https://www.google.com/maps?q=Times+Square,+New+York+City,+New+York&output=embed" frameborder="0" width="100%" height="300"></iframe>
-    <li>Statue of Liberty, New York City, New York</li>
-    <iframe src="https://www.google.com/maps?q=Statue+of+Liberty,+New+York+City,+New+York&output=embed" frameborder="0" width="100%" height="300"></iframe>
+    <div class="location">
+      <iframe src="https://www.google.com/maps?q=Times Square, New York City, New York&output=embed" frameborder="0" width="640" height="480" allowfullscreen></iframe>
+    </div>
+    <li>Central Park, New York City, New York</li>
+    <div class="location">
+      <iframe src="https://www.google.com/maps?q=Central Park, New York City, New York&output=embed" frameborder="0" width="640" height="480" allowfullscreen></iframe>
+    </div>
+    <li>Empire State Building, New York City, New York</li>
+    <div class="location">
+      <iframe src="https://www.google.com/maps?q=Empire State Building, New York City, New York&output=embed" frameborder="0" width="640" height="480" allowfullscreen></iframe>
+    </div>
   </ul>
 </body>
 </html>
