@@ -9,58 +9,49 @@
 		}
 		
 		.container {
-			max-width: 800px;
 			margin: 40px auto;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-		
-		.images {
+			width: 800px;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
 		
 		.image {
-			margin: 10px;
+			margin: 20px;
 			width: 200px;
 			height: 150px;
 			object-fit: cover;
-			border-radius: 10px;
 		}
 		
 		.locations {
-			margin-top: 20px;
+			margin-top: 40px;
 		}
 		
 		.location {
 			margin-bottom: 20px;
 		}
 		
-		.location iframe {
-			width: 100%;
+		.map {
+			width: 400px;
 			height: 300px;
-			border: none;
+			border: 1px solid #ccc;
 		}
 	</style>
 </head>
 <body>
+	<h1>New York in One Day Guided Sightseeing Tour</h1>
 	<div class="container">
-		<h1>New York in One Day Guided Sightseeing Tour</h1>
-		<div class="images">
-			<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/42/caption.jpg" alt="Image 1">
-			<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/43/caption.jpg" alt="Image 2">
-			<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/44/caption.jpg" alt="Image 3">
-		</div>
-		<ul class="locations">
-			<li>New York City, New York</li>
-			<iframe src="https://www.google.com/maps?q=New York City, New York&output=embed" frameborder="0" width="100%" height="300"></iframe>
-			<li>Central Park</li>
-			<iframe src="https://www.google.com/maps?q=Central Park, New York City, New York&output=embed" frameborder="0" width="100%" height="300"></iframe>
-			<li>Statue of Liberty</li>
-			<iframe src="https://www.google.com/maps?q=Statue of Liberty, New York City, New York&output=embed" frameborder="0" width="100%" height="300"></iframe>
-		</ul>
+		<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/42/caption.jpg" alt="Image 1" class="image">
+		<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/43/caption.jpg" alt="Image 2" class="image">
+		<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/44/caption.jpg" alt="Image 3" class="image">
 	</div>
+	<ul class="locations">
+		<li>Statue of Liberty, Liberty Island, New York City, NY</li>
+		<iframe src="https://www.google.com/maps?q=Statue+of+Liberty,+Liberty+Island,+New+York+City,+NY&output=embed" frameborder="0" style="width: 400px; height: 300px;"></iframe>
+		<li>Central Park, Manhattan, New York City, NY</li>
+		<iframe src="https://www.google.com/maps?q=Central+Park,+Manhattan,+New+York+City,+NY&output=embed" frameborder="0" style="width: 400px; height: 300px;"></iframe>
+		<li>9/11 Memorial & Museum, Lower Manhattan, New York City, NY</li>
+		<iframe src="https://www.google.com/maps?q=9/11+Memorial+%26+Museum,+Lower+Manhattan,+New+York+City,+NY&output=embed" frameborder="0" style="width: 400px; height: 300px;"></iframe>
+	</ul>
 </body>
 </html>
