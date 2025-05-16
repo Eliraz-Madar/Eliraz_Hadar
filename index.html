@@ -7,50 +7,48 @@
 			font-family: Arial, sans-serif;
 			text-align: center;
 		}
-		.images {
+		.image-container {
+			margin: 20px auto;
+			width: 600px;
 			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
+			justify-content: space-between;
 		}
-		.image {
+		.image-container img {
 			width: 200px;
 			margin: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
 		}
 		.locations {
-			list-style: none;
-			padding: 0;
-			margin: 0;
+			margin: 20px auto;
+			width: 600px;
+			text-align: left;
 		}
-		.location {
+		.locations li {
 			margin-bottom: 20px;
 		}
-		.location iframe {
+		.locations iframe {
 			width: 100%;
-			height: 300px;
 			border: none;
 		}
 	</style>
 </head>
 <body>
 	<h1>Paris Walking Food Tour with Secret Food Tours</h1>
-	<div class="images">
-		<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/48/caption.jpg" alt="Image 1">
-		<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/49/caption.jpg" alt="Image 2">
-		<img class="image" src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/4a/caption.jpg" alt="Image 3">
+	<div class="image-container">
+		<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/48/caption.jpg" alt="Image 1">
+		<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/49/caption.jpg" alt="Image 2">
+		<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/50/caption.jpg" alt="Image 3">
 	</div>
-	<ul class="locations">
-		<li>
-			Attraction 1 - Location 1
-			<iframe src="https://www.google.com/maps?q=Location+1&output=embed" frameborder="0" width="100%" height="300"></iframe>
-		</li>
-		<li>
-			Attraction 2 - Location 2
-			<iframe src="https://www.google.com/maps?q=Location+2&output=embed" frameborder="0" width="100%" height="300"></iframe>
-		</li>
-		<li>
-			Attraction 3 - Location 3
-			<iframe src="https://www.google.com/maps?q=Location+3&output=embed" frameborder="0" width="100%" height="300"></iframe>
-		</li>
-	</ul>
+	<div class="locations">
+		<ul>
+			<li>Attraction 1 - Paris, Ile-de-France</li>
+			<iframe src="https://www.google.com/maps?q=Paris%2C%20Ile-de-France&output=embed" frameborder="0" width="600" height="400"></iframe>
+			<li>Attraction 2 - Paris, Ile-de-France</li>
+			<iframe src="https://www.google.com/maps?q=Paris%2C%20Ile-de-France&output=embed" frameborder="0" width="600" height="400"></iframe>
+			<li>Attraction 3 - Paris, Ile-de-France</li>
+			<iframe src="https://www.google.com/maps?q=Paris%2C%20Ile-de-France&output=embed" frameborder="0" width="600" height="400"></iframe>
+		</ul>
+	</div>
 </body>
 </html>
