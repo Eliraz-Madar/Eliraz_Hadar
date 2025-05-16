@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Paris Walking Food Tour with Secret Food Tours</title>
+	<title>New York in One Day Guided Sightseeing Tour</title>
 	<style>
 		body {
 			font-family: Arial, sans-serif;
 			text-align: center;
 		}
-		.image-container {
-			margin: 20px auto;
-			width: 600px;
-			display: flex;
-			justify-content: space-between;
+		.container {
+			max-width: 800px;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		}
-		.image-container img {
+		.image-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.image {
 			width: 200px;
 			margin: 10px;
-			border: 1px solid #ccc;
-			border-radius: 5px;
-		}
-		.locations {
-			margin: 20px auto;
-			width: 600px;
-			text-align: left;
-		}
-		.locations li {
-			margin-bottom: 20px;
-		}
-		.locations iframe {
-			width: 100%;
-			border: none;
 		}
 	</style>
 </head>
 <body>
-	<h1>Paris Walking Food Tour with Secret Food Tours</h1>
-	<div class="image-container">
-		<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/48/caption.jpg" alt="Image 1">
-		<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/49/caption.jpg" alt="Image 2">
-		<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/50/caption.jpg" alt="Image 3">
-	</div>
-	<div class="locations">
+	<div class="container">
+		<h1>New York in One Day Guided Sightseeing Tour</h1>
+		<div class="image-container">
+			<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/42/caption.jpg" alt="Image 1" class="image">
+			<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/43/caption.jpg" alt="Image 2" class="image">
+			<img src="https://media-cdn.tripadvisor.com/media/photo-o/1a/66/44/44/caption.jpg" alt="Image 3" class="image">
+		</div>
 		<ul>
-			<li>Attraction 1 - Paris, Ile-de-France</li>
-			<iframe src="https://www.google.com/maps?q=Paris%2C%20Ile-de-France&output=embed" frameborder="0" width="600" height="400"></iframe>
-			<li>Attraction 2 - Paris, Ile-de-France</li>
-			<iframe src="https://www.google.com/maps?q=Paris%2C%20Ile-de-France&output=embed" frameborder="0" width="600" height="400"></iframe>
-			<li>Attraction 3 - Paris, Ile-de-France</li>
-			<iframe src="https://www.google.com/maps?q=Paris%2C%20Ile-de-France&output=embed" frameborder="0" width="600" height="400"></iframe>
+			<li>New York City, New York</li>
+			<iframe src="https://www.google.com/maps?q=New+York+City,+New+York&output=embed" frameborder="0" width="400" height="300"></iframe>
+			<li>Another Attraction, New York City, New York</li>
+			<iframe src="https://www.google.com/maps?q=Another+Attraction,+New+York+City,+New+York&output=embed" frameborder="0" width="400" height="300"></iframe>
+			<li>Last Attraction, New York City, New York</li>
+			<iframe src="https://www.google.com/maps?q=Last+Attraction,+New+York+City,+New+York&output=embed" frameborder="0" width="400" height="300"></iframe>
 		</ul>
 	</div>
 </body>
