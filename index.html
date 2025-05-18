@@ -9,55 +9,51 @@
   img         { max-width:100%; height:auto; border-radius:.5rem; }
   h1,h2,h3,h4 { color:#0d6efd; }
 </style>
-	<title>Paris Walking Food Tour with Secret Food Tours</title>
-	<style>
-		body {
-			font-family: Arial, sans-serif;
-			text-align: center;
-		}
-		.container {
-			width: 80%;
-			margin: 40px auto;
-			padding: 20px;
-			background-color: #f9f9f9;
-			border: 1px solid #ccc;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.image-grid {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.image-grid img {
-			width: 200px;
-			margin: 10px;
-			border-radius: 10px;
-		}
-	</style>
+  <title>Paris Walking Food Tour with Secret Food Tours</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .image-grid {
+      display: flex;
+      justify-content: space-between;
+    }
+    .image-grid img {
+      width: 200px;
+      margin: 10px;
+    }
+    .location-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .location-list li {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .location-list li:last-child {
+      border-bottom: none;
+    }
+  </style>
 </head>
 <body>
-	<div class="container">
-		<h1>Paris Walking Food Tour with Secret Food Tours</h1>
-		<div class="image-grid">
-			<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/48/caption.jpg" alt="Image 1">
-			<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/49/caption.jpg" alt="Image 2">
-			<img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/50/caption.jpg" alt="Image 3">
-		</div>
-		<ul>
-			<li>Attraction 1 - <a href="https://www.google.com/maps?q=Attraction 1 Location&output=embed">Map</a></li>
-			<div>
-				<iframe src="https://www.google.com/maps?q=Attraction 1 Location&output=embed" frameborder="0" style="width: 100%; height: 300px;"></iframe>
-			</div>
-			<li>Attraction 2 - <a href="https://www.google.com/maps?q=Attraction 2 Location&output=embed">Map</a></li>
-			<div>
-				<iframe src="https://www.google.com/maps?q=Attraction 2 Location&output=embed" frameborder="0" style="width: 100%; height: 300px;"></iframe>
-			</div>
-			<li>Attraction 3 - <a href="https://www.google.com/maps?q=Attraction 3 Location&output=embed">Map</a></li>
-			<div>
-				<iframe src="https://www.google.com/maps?q=Attraction 3 Location&output=embed" frameborder="0" style="width: 100%; height: 300px;"></iframe>
-			</div>
-		</ul>
-	</div>
+  <h1>Paris Walking Food Tour with Secret Food Tours</h1>
+  <div class="image-grid">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/48/caption.jpg" alt="Image 1">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/49/caption.jpg" alt="Image 2">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-o/25/1c/52/4a/caption.jpg" alt="Image 3">
+  </div>
+  <ul class="location-list">
+    <li>Attraction 1 - Paris, Ile-de-France
+      <iframe src="https://www.google.com/maps?q=Paris,+Ile-de-France&output=embed" frameborder="0" width="100%" height="300"></iframe>
+    </li>
+    <li>Attraction 2 - Paris, Ile-de-France
+      <iframe src="https://www.google.com/maps?q=Paris,+Ile-de-France&output=embed" frameborder="0" width="100%" height="300"></iframe>
+    </li>
+    <li>Attraction 3 - Paris, Ile-de-France
+      <iframe src="https://www.google.com/maps?q=Paris,+Ile-de-France&output=embed" frameborder="0" width="100%" height="300"></iframe>
+    </li>
+  </ul>
 </body>
 </html>
